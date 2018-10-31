@@ -1,0 +1,33 @@
+<div class='container'>
+  <div class='row'>
+    <h1>All Flats (<%= @flats.size %>)</h1>
+    <% @flats.each do |flat| %>
+    <div class='card-container'>
+    <div class='col-sm-4'>
+
+      <div class='card'>
+      <div class='card-header'>
+      </div>
+      <div class='card-desc'>
+        <h3> <%=flat.name %> </h3>
+            <h5>
+              <%= flat.address %>
+            </h5>
+            <div class="flat-spec">
+              <%= flat.price_per_night %> <i class="fas fa-euro-sign"></i>
+              <%= flat.number_of_guests %> <i class="fas fa-users"></i>
+            </div>
+          </div>
+          <div class="card-footer">
+          <%= link_to 'Remove', flat_path(flat),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %> |
+      <%= link_to 'Edit', edit_flat_path(flat)%> |
+      <%= link_to 'More Infos', flat_path(flat) %>
+      </div>
+      </div>
+    </div>
+  </div>
+    <% end %>
+  </div>
+</div>

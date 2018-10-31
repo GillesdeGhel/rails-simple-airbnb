@@ -1,0 +1,95 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "layouts/index";
+@import "components/index";
+@import "pages/index";
+
+.edit {
+  color: green;
+}
+
+.card {
+  position: relative;
+  background: lightgrey;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.card-header {
+  background-image: url("https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9f96bdaf999d3644b1157b27d214517a&auto=format&fit=crop&w=334&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 200px
+}
+
+.card-desc {
+  margin-left: 15px;
+}
+
+.flat-spec {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.card-footer {
+  position: absolute;
+  background: grey;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  text-align: center;
+}
+
+.banner {
+  position: relative;
+  margin: 30px;
+  background: lightgrey;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.banner-header {
+  background-image: url("https://images.unsplash.com/photo-1507124484497-b7f446e65519?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c700a234506c6b2093116821e20a9d42&auto=format&fit=crop&w=1316&q=80");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-desc {
+  margin: 15px;
+}
+
+.banner-footer {
+  position: absolute;
+  background: grey;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  text-align: center;
+}
+
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: lightgrey;
+}
+
+

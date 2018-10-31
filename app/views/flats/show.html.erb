@@ -1,0 +1,36 @@
+<div class='banner-header'></div>
+<div class='container'>
+  <div class='row'>
+    <div class='col-sm-8 col-sm-offset-2'>
+     <div class='banner'>
+      <div class='banner-desc'>
+        <h3> <%=@flat.name %> </h3>
+            <h5>
+              <%= @flat.address %>
+            </h5>
+          </div>
+        </div>
+
+          <div class='banner'>
+            <div class='banner-desc'>
+              <h3>About this Flat</h3>
+            <p><%= @flat.description  %> </p>
+
+
+           <div class="flat-spec">
+            <h3>Detail :</h3>
+              <div> <i class="fas fa-euro-sign"></i>  <%= @flat.price_per_night %></div>
+              <div><i class="fas fa-users"></i>  <%= @flat.number_of_guests %> </div>
+            </div>
+            </div>
+          <div class="banner-footer">
+          <%= link_to 'Remove', flat_path(@flat),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %> |
+      <%= link_to 'Edit', edit_flat_path(@flat)%> |
+      <%= link_to 'Back to the List', flats_path %>
+      </div>
+
+    </div>
+  </div>
+</div>
